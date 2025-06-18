@@ -3,7 +3,7 @@ function  Button(func, button_color, text_color, width, height )
 	
 	return{
 
-	func = func, 
+	func = func or function() print("This button has no function attached") end, 
 	text_color= text_color or {r = 0, g =0 , b = 0},
 	button_color= button_color or {r = 1, g= 1, b= 1},
 	width= width or 100,
