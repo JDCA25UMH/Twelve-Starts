@@ -78,9 +78,6 @@ function love.mousepressed(x, y, button, istouch, presses)
                     buttons.menu_state[index]:checkPressed(x, y)
               
                 end
-                elseif game.state["ended"]then
-                    for index in pairs(buttons.menu_state)do
-                    buttons.menu_state[index]:checkPressed(x, y)
             end
          end
       end
